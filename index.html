@@ -8,34 +8,35 @@
 
 	<body>
 
+		<div class="column">
+			<a href="drawing1.html"><div class="row" id="anger">
+				<img src="images/anger1.jpg">
+				<img src="images/anger2.jpg">
+				<img src="images/anger3.jpg">
+			</div></a>
 
-		<a href="drawing1.html"><div class="anger">
-			<img src="images/anger1.jpg" width="480px" height="280px">
-			<img src="images/anger2.jpg" width="480px" height="280px">
-			<img src="images/anger3.jpg" width="480px" height="280px">
-		</div></a>
-
-		<a href="drawing2.html"><div class="sad">
-			<img src="images/sad1.jpg" width="480px" height="280px">
-			<img src="images/sad2.jpg" width="480px" height="280px">
-			<img src="images/sad3.jpeg" width="480px" height="280px">
-		</div></a>
+			<a href="drawing2.html"><div class="row" id="sad">
+				<img src="images/sad1.jpg">
+				<img src="images/sad2.jpg">
+				<img src="images/sad3.jpeg">
+			</div></a>
 
 
-		<a href="drawing3.html"><div class="surprise">
-			<img src="images/surprise1.jpg" width="480px" height="280px">
-			<img src="images/surprise2.jpg" width="480px" height="280px">
-			<img src="images/surprise3.jpg" width="480px" height="280px">		
-		</div></a>
+			<a href="drawing3.html"><div class="row" id="surprise">
+				<img src="images/surprise1.jpg">
+				<img src="images/surprise2.jpg">
+				<img src="images/surprise3.jpg">		
+			</div></a>
+		</div>
 
 		<p>Emotions</p>
 
 
 
 		<script type="text/javascript">
-			var anger = document.querySelector('.anger');
-			var sad = document.querySelector('.sad');
-			var surprise = document.querySelector('.surprise');
+			var anger = document.querySelector('#anger');
+			var sad = document.querySelector('#sad');
+			var surprise = document.querySelector('#surprise');
 
 			anger.onmouseover = function() {
 				anger.style.opacity ="1.0";
