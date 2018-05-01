@@ -1,0 +1,102 @@
+body {
+	width: 100%;
+	margin: auto;
+}
+
+canvas {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+svg.features {
+	position: absolute;
+}
+
+svg#leftBrow {
+	left: 400px;
+	top: 150px;
+	animation: leftBrowMove 5s linear forwards;
+}
+
+svg#rightBrow {
+	top: 150px;
+	left: 800px;
+	animation: rightBrowMove 5s linear forwards;
+}
+
+svg#leftEye {
+	top: 300px;
+	left: 400px;
+	animation: leftEyeMove 5s linear forwards;
+}
+
+svg#rightEye {
+	top: 300px;
+	left: 800px;
+	animation: rightEyeMove 5s linear forwards;
+	/*filter: drop-shadow(10px 0px 10px red);*/
+}
+
+#ocean {
+	position:absolute;
+  	width:100%;
+  	min-height:100%;
+  	background: linear-gradient(0deg,rgba(0,50,150,0.3),rgba(0,150,255,0.8));
+  );
+}
+
+
+
+@keyframes leftBrowMove {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-10deg);
+		top: 170px;
+	}
+	100% {
+		transform: rotate(-20deg);
+		top: 190px;
+	}
+}
+
+@keyframes rightBrowMove {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(10deg);
+		top: 170px;
+	}
+	100% {
+		transform: rotate(20deg);
+		top: 190px;
+	}
+}
+
+@keyframes leftEyeMove {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		left: 420px;
+	}
+	100% {
+		left: 430px;
+	}
+}
+
+@keyframes rightEyeMove {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		left: 780px;
+	}
+	100% {
+		left: 770px;
+	}
+}
